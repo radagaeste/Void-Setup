@@ -2,7 +2,9 @@
 set -e
 
 echo "Add custom repository..."
-echo repository=https://raw.githubusercontent.com/Makrennel/hyprland-void/repository-x86_64-glibc | sudo tee /etc/xbps.d/hyprland-void.conf
+echo repository=https://github.com/Encoded14/void-extra/releases/download/repository-x86_64 | sudo tee /etc/xbps.d/20-repository-extra.conf
+echo "repository=https://universalrepo.r1xelelo.workers.dev/void" \
+  | sudo tee /etc/xbps.d/noctalia.conf
 sudo xbps-install -S
 echo "Custom repository added successfully!"
 
@@ -43,7 +45,7 @@ packages=(
   hyprpaper          # Wallpaper Manager
   hyprlock           # LockScreen Manager
   hyprland-qtutils   # Qt/QML utility for Hyprland
-  quickshell         # Desktop shell toolkit
+  noctalia-shell         # Desktop shell toolkit
   wl-clipboard       # To copy screenshots to clipboard
   cliphist           # Manage clipboard & Screenshot
   grim               # Takes screenshots of the screen or regions
