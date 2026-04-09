@@ -45,7 +45,7 @@ packages=(
   hyprpaper          # Wallpaper Manager
   hyprlock           # LockScreen Manager
   hyprland-qtutils   # Qt/QML utility for Hyprland
-  noctalia-shell         # Desktop shell toolkit
+  quickshell        # Desktop shell toolkit
   wl-clipboard       # To copy screenshots to clipboard
   cliphist           # Manage clipboard & Screenshot
   grim               # Takes screenshots of the screen or regions
